@@ -27,8 +27,9 @@
   }
   
   .slider {
+    visibility: hidden;
     opacity: 0;
-    transition: opacity .2s;
+    transition: opacity .2s, visibility .2s;
     position: absolute;
     width: 100%;
     border-radius: 10px;
@@ -36,6 +37,7 @@
   
   .on {
     opacity: 1;
+    visibility: visible;
   }
   
   #prev-button, #next-button {
